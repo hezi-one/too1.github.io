@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实验室预约系统</title>
+    <style>
+        /* 这里包含所有CSS样式代码 */
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2980b9;
+            --success-color: #2ecc71;
+            --danger-color: #e74c3c;
+            --light-color: #f8f9fa;
+            --dark-color: #343a40;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* 其余CSS样式... */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>实验室预约系统</h1>
+            <p>便捷预约，高效使用实验室资源</p>
+        </header>
+        
+        <!-- 页面内容 -->
+        
+    </div>
+
+    <script>
+        // 这里包含所有JavaScript代码
+        const STORAGE_KEY = 'labBookings';
+        
+        // 初始化数据
+        function initializeData() {
+            if (!localStorage.getItem(STORAGE_KEY)) {
+                localStorage.setItem(STORAGE_KEY, JSON.stringify([]));
+            }
+        }
+        
+        // 其余JavaScript代码...
+    </script>
+</body>
+</html>
